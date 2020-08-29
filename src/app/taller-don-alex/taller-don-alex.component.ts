@@ -32,16 +32,27 @@ export class TallerDonAlexComponent implements OnInit {
 
   ingresar(){
 //FORMA DE INDEXOF PARA ENCONTRAR ELEMENTO EXISTENTE EN UN ARRAY
+let index = this.registros.findIndex( record => record.dui === this.dui);
 
-
-
+if (index==-1){
+  console.log("registro inexistente")
+  //Registro de la primera visita
   this.clientes={"nombre":this.nombre, "dui":this.dui, "costo_rep":this.costo_reparacion, "vehiculo":this.vehiculo,"visitas":this.visitas_contadas+1};
   this.registros.push(this.clientes);
+}
+
+if (index!==-1){
+  console.log("registro existente")
+
+}
 
 
-  console.log(this.registros.includes(this.dui));
-/*if (this.registros.includes(this.dui) ==true ){
-  if (this.visitas_contadas>=2 || this.visitas_contadas<=4){
+
+
+}
+
+
+/*  if (this.visitas_contadas>=2 || this.visitas_contadas<=4){
   this.venta =  this.costo_reparacion- (this.costo_reparacion* 0.05)
   }
   if (this.visitas_contadas>4){
@@ -54,6 +65,6 @@ export class TallerDonAlexComponent implements OnInit {
 
 
   }//Termino de metodo ingresar()
-}
+
 
 
