@@ -35,14 +35,16 @@ export class TallerDonAlexComponent implements OnInit {
 let index = this.registros.findIndex( record => record.dui === this.dui);
 
 if (index==-1){
-  console.log("registro inexistente")
   //Registro de la primera visita
   this.clientes={"nombre":this.nombre, "dui":this.dui, "costo_rep":this.costo_reparacion, "vehiculo":this.vehiculo,"visitas":this.visitas_contadas+1};
   this.registros.push(this.clientes);
 }
-
+//Se detecta que el cliente ya esta registrado entonces tendra distinto proceso
 if (index!==-1){
-  console.log("registro existente")
+  //Se suma una nueva visita al cliente
+  this.registros[index].visitas = this.registros[index].visitas + 1;
+
+ //Visualizacion temporal por medio de la consola del Object console.log(this.registros);
 
 }
 
