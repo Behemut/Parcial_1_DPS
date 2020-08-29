@@ -47,25 +47,7 @@ if (index!==-1){
  //Visualizacion temporal por medio de la consola del Object console.log(this.registros);
 
 }
-
-
-
-
 }
-
-
-/*  if (this.visitas_contadas>=2 || this.visitas_contadas<=4){
-  this.venta =  this.costo_reparacion- (this.costo_reparacion* 0.05)
-  }
-  if (this.visitas_contadas>4){
-    this.venta =  this.costo_reparacion- (this.costo_reparacion* 0.10)
-  }
-  this.clientes={"nombre":this.nombre, "dui":this.dui, "costo_rep":this.costo_reparacion, "vehiculo":this.vehiculo,"visitas":this.visitas_contadas+4};
-  this.registros.push(this.clientes);
-}*/
-
-
-
   }//Termino de metodo ingresar()
 
 
