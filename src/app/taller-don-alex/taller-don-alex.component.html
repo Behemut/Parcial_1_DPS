@@ -25,38 +25,54 @@ hr{
 	height: 0px; text-align: center;
 }
 
-form{
-	text-align: center;
-	}
+  #formulario{
+    text-align: center;
+  margin-left: 19%;
+  }
+th{
+  text-align: center;
+}
+ 
 	</style>
 
 <header>
-	<h1>Ingreso de Datos para reparación</h1>
+	<h1 class="h1">Ingreso de Datos para reparación</h1>
 </header>
 <br>
 <br>
 <hr>
 <br>
 <br>
-<div id="formulario">
-  <div class="form-group">
+<div id="formulario" class="rounded-sm">
+  <div class="form-group w-75 rounded-sm">
 
-    <label >Nombre del Cliente</label>
+    <label class="h3">Nombre del Cliente</label>
     <input type="text"  [(ngModel)]="nombre"  class="form-control" >
+<br>
+<br>
 
-
-    <label >DUI del cliente</label>
-    <input type="text"  [(ngModel)]="dui" class="form-control" >
-
-    <label >Costo de Reparación:</label>
+    <label class="h3" >DUI del cliente</label>
+    <input type="number"  [(ngModel)]="dui" class="form-control"  maxlength="9">
+    <br>
+    <br>
+    
+    <label class="h3">Costo de Reparación:</label>
     <input type="number"  [(ngModel)]="costo_reparacion" class="form-control" >
+    <br>
+    <br>
+    
 
-
-    <label >Vehiculo:</label>
+    <label class="h3">Vehiculo:</label>
     <input type="text"  [(ngModel)]="vehiculo" class="form-control" >
   </div>
+  <br>
+ 
+  
+  <button style="margin-right: 26%;"     (click)="ingresar()"  class="btn btn-primary btn-lg">Enviar Datos</button>
+  <br>
+  <br>
+  <br>
 
-  <button (click)="ingresar()"  class="btn btn-primary btn-lg">Enviar Datos</button>
 </div>
 
 
