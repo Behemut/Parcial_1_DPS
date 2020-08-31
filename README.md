@@ -1,5 +1,5 @@
-Imagen proyecto
-![alt text](https://cdn.discordapp.com/attachments/737338114548170802/749777201217404928/79137269_2207163676246488_5446363657720037376_o.png)
+# BIENVENIDO AL DESAFIO PRACTICO #1  CLAVE B   
+![alt text](https://cdn.discordapp.com/attachments/737338114548170802/749784638813241404/FB_IMG_1597205756781.jpg)
 
 # Desafio1
 
