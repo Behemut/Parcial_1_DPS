@@ -42,13 +42,15 @@ if (index==-1){
 //Se detecta que el cliente ya esta registrado entonces tendra distinto proceso
 if (index!==-1){
   //Se suma una nueva visita al cliente
-  this.registros[index].visitas = this.registros[index].visitas + 1;
-  if (this.registros[index].visitas = 2){
-    this.registros[index].costo_rep= this.costo_reparacion- ( this.costo_reparacion*0.05)
+  this.registros[index].visitas= this.registros[index].visitas +1;
+
+  if (this.registros[index].visitas == 2){
+    this.registros[index].costo_rep = this.costo_reparacion- ( this.costo_reparacion*0.05)
   }
   if (this.registros[index].visitas > 4){
     this.registros[index].costo_rep= this.costo_reparacion- ( this.costo_reparacion*0.10)
   }
+
 
  //Visualizacion temporal por medio de la consola del Object console.log(this.registros);
 
